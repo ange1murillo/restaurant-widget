@@ -1,0 +1,125 @@
+body{
+    font-family: 'Georgia', serif;
+    background-position:center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: auto;
+    text-align: center;
+    background-color:#F4A460;
+    color:saddlebrown;
+
+}
+
+/*#container{
+    top:50%;
+    left:50%;
+}*/
+
+#resForm{
+    background-color:#800020;
+    color:beige;
+    width: 500px;
+    margin:auto;
+    margin-top: 50px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 16px 16px 16px 16px;
+}
+
+#nameError{
+    background-color:#F4A460;
+}
+
+#guestError{
+    background-color: #F4A460;
+}
+
+#emailError{
+    background-color: #F4A460;
+}
+
+#resError{
+    background-color: #F4A460;
+}
+
+#res-table{
+    width:500px;
+}
+
+
+/*    .tip{
+    width:200px;
+    position: relative;
+    bottom: 50px;
+    left: -300px;
+    background-color: red;
+    color: white;
+    border: solid black 1px;
+    text-align: center;
+    float: right;
+    padding: 5px;
+    display: none;
+}*/
+
+#main-header{
+    text-align: center;
+    font-family: Verdana,Geneva,sans-serif;
+
+}
+
+#grand{
+    text-align: center;
+    font-size: 40px;
+    font-family: Verdana,Geneva,sans-serif;
+}
+
+h2{
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+#date{
+    margin-left: 100px;
+}
+
+img{
+    width: 400px;
+}
+
+#sad{
+    font-size: 20px;
+}
+
+#button{
+    position: relative;
+    top: -10px;
+}
+
+#resMessage{
+    padding-bottom: 15px;
+}
+
+.desc{
+    font-size: 20px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 480px) {
+    #resForm {
+        margin-left: 180px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #resForm {
+        margin-left: 180px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #resForm {
+        margin-left: 180px;
+    }
+}
