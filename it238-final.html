@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>IT238 Final Project</title>
+
+<script type="text/javascript" 
+	src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+</script>
+
+<script type="text/javascript" src="it238-final.js"></script>
+    
+<link rel="stylesheet" type="text/css" href="it238-final.css">
+    
+<script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+    
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+    
+    
+    
+
+
+</head>
+
+<body>
+    
+   <div id="container">
+  <div id="resForm">
+
+  <h1 id="main-header"><em>Restaurant Invitation</em></h1>
+      
+    <hr>
+      
+<img src="images/restable.jpg" id="res-table">
+     
+  <form action="http://facsrv.cdm.depaul.edu/~cmiller/php/respond.php" 
+        method="post">
+      
+    <h1 id="grand">You're Invitied!</h1>
+      
+
+    <p>
+      <input type="radio" name="attend" id="accept" value="yes" />
+      <label for="accept">Accept the invitation</label><br />
+
+      <input type="radio" name="attend" id="decline" value="no" />
+      <label for="decline">Decline the invitation</label><br />
+    </p>
+    
+      <h2 class="header">Order Menu</h2>
+      
+      <p id="mainDish">Main Dish:
+        <select name="mainDish">
+        <option value="lamb">Lamb Salad with Fregola</option>
+        <option value="pork">Smoked Pork Jowl with Pickles</option>
+        <option value="vegan">Vegan Charcuterie</option>
+        <option value="scallop">Scallop Sashimi</option>
+      </select>
+    </p>
+      
+      <p id="drink">Beverage:
+        <select name="drink">
+        <option value="water">Water</option>
+        <option value="tea">Tea</option>
+        <option value="lemonade">Lemonade</option>
+        <option value="coke">Coke</option>
+      </select>
+    </p>
+      
+        <p id="dessert">Dessert:
+        <select name="dessert">
+        <option value="apple">Apple Pie</option>
+        <option value="sundae">Sundae</option>
+        <option value="flan">Flan</option>
+        <option value="peach">Peach Cobbler</option>
+      </select>
+    </p>
+      
+  
+      
+      <h2 class="header">Confirmation</h2>
+      
+        <p id="guest">
+      <label for="numGuests">Number of Guests:</label> 
+      <input size="2" type="text" 
+             name="guests" id="numGuests" />
+        <span id="guestError">Enter a number</span>
+    </p>
+      
+      
+      
+    <p>
+      <label for="user">Name:</label>
+        
+          <input type="text" name="username" id="user" />
+    <span id="nameError">Enter your name</span>
+    </p>
+      
+      
+    <p id="email">
+      <label for="cemail">E-Mail:<!--<span class="tip">required</span>--></label>
+        <input id="cemail" type="email" name="email">
+        <span id="emailError">Enter vaild E-mail</span>
+      </p>
+      
+      <p id="sign-head">
+        Allow Weekly Specials & Events Push Notifications?
+      
+      </p>
+      
+      <p id="sign-radio">
+      <input type="radio" name="notify" id="yes-push" value="yes-push" />
+      <label for="yes-push">Yes, allow them</label><br />
+
+      <input type="radio" name="notify" id="no-push" value="no-push" />
+      <label for="no-push">Not now</label><br />
+    </p>
+      
+      <h2 class="header">Table Reservation</h2>
+      
+      <p id="picktime"><label for="time">Enter Time:</label>
+      <input type="text" name="time" id="time" size="8">
+       <span id="resError">Enter time</span></p>
+      
+      <div id="date"></div> <br>
+      
+      <input type="button" value="Schedule" id="sButton">
+      
+      <p id="resMessage"></p>
+      
+          <p>
+      <input id="button" type="submit" />
+    </p>
+      
+      <div id="decMessage">
+      
+      <p id="sad">We're sad you couldnt make it :( , <br> here are some of our main dishes you can try next time! </p>
+    
+      <p id="pic2"></p>
+          <p class="desc">Vegan Charcuterie</p>
+      <p id="pic1"></p>
+          <p class="desc">Lamb Salad with Fregola</p>
+      <p id="pic3"></p>
+          <p class="desc">Scallop Sashimi</p>
+          
+          </div>
+    
+
+   
+
+  </form>
+</div>
+       </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+</body>
+    
+</html>
